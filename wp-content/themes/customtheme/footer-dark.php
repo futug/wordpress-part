@@ -3,7 +3,7 @@
     <div class="footer__contacts-bar">
       <a href="#" class="footer__contacts-bar-item">
         <svg class="footer__contacts-bar-ico">
-          <use xlink:href="img/sprite.svg#phone"></use>
+          <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#phone"></use>
         </svg>
         <div class="footer__contacts-bar-content">
           <p class="footer__contacts-bar-top">Позвоните нам</p>
@@ -12,7 +12,7 @@
       </a>
       <a href="#" class="footer__contacts-bar-item">
         <svg class="footer__contacts-bar-ico">
-          <use xlink:href="img/sprite.svg#mail"></use>
+          <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#mail"></use>
         </svg>
         <div class="footer__contacts-bar-content">
           <p class="footer__contacts-bar-top">Напишите нам</p>
@@ -21,7 +21,7 @@
       </a>
       <a href="#" class="footer__contacts-bar-item">
         <svg class="footer__contacts-bar-ico">
-          <use xlink:href="img/sprite.svg#clock"></use>
+          <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#clock"></use>
         </svg>
         <div class="footer__contacts-bar-content">
           <p class="footer__contacts-bar-top">Рабочие часы</p>
@@ -33,7 +33,7 @@
       <p class="footer__subtitle">наш адрес</p>
       <div class="footer__address-content">
         <svg class="footer__address-ico">
-          <use xlink:href="img/sprite.svg#geo-mark"></use>
+          <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#geo-mark"></use>
         </svg>
         <p class="footer__address-text">
           SERNERO ADVERTISING LTD 42 Lynwood Terrace Newcastle Upon Tyne NE4 6UN
@@ -71,19 +71,19 @@
       <div class="footer__contacts-list">
         <a href="tel:+3726188161" class="footer__contacts-item">
           <svg class="footer__contacts-ico">
-            <use xlink:href="img/sprite.svg#phone"></use>
+            <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#phone"></use>
           </svg>
           <p class="footer__contacts-text">+372 618 81 61</p>
         </a>
         <a href="mailto:info@sernero.com" class="footer__contacts-item">
           <svg class="footer__contacts-ico">
-            <use xlink:href="img/sprite.svg#mail"></use>
+            <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#mail"></use>
           </svg>
           <p class="footer__contacts-text">info@sernero.com</p>
         </a>
         <div class="footer__contacts-item">
           <svg class="footer__contacts-ico">
-            <use xlink:href="img/sprite.svg#clock"></use>
+            <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#clock"></use>
           </svg>
           <p class="footer__contacts-text">Пн-Пт 9:00–18:00</p>
         </div>
@@ -100,7 +100,7 @@
         target="_blank"
       >
         <svg class="socials-bar__ico">
-          <use xlink:href="img/sprite.svg#telegram-ico"></use>
+          <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#telegram-ico"></use>
         </svg>
       </a>
       <a
@@ -110,7 +110,7 @@
         target="_blank"
       >
         <svg class="socials-bar__ico">
-          <use xlink:href="img/sprite.svg#whatsapp-ico"></use>
+          <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#whatsapp-ico"></use>
         </svg>
       </a>
     </div>
@@ -123,7 +123,7 @@
 </div>
 <div class="to-top">
   <svg class="to-top__button-ico">
-    <use xlink:href="img/sprite.svg#top-button"></use>
+    <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#top-button"></use>
   </svg>
 </div>
 

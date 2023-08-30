@@ -8,21 +8,18 @@
   <title>Sernero — PR agency</title>
   <link
     rel="preload"
-    href="fonts/Montserrat-Regular.woff2"
+    href="<?php bloginfo('template_url'); ?>/assets/fonts/Montserrat-Regular.woff2"
     as="font"
     type="font/woff2"
     crossorigin
   />
   <link
     rel="preload"
-    href="fonts/RubikMonoOne-Regular.woff2"
+    href="<?php bloginfo('template_url'); ?>/assets/fonts/RubikMonoOne-Regular.woff2"
     as="font"
     type="font/woff2"
     crossorigin
   />
-  <!-- <link rel="stylesheet" href="css/vendor.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <script defer src="js/main.js"></script> -->
 
   <?php wp_head(); ?>
 
@@ -33,24 +30,24 @@
       <header class="header">
   <div class="header__inner container">
     <a class="header__logo" href="index.html">
-      <img class="header__logo-image" loading="lazy" src="../img/sernero_logo.svg" alt="company logo" />
+      <img class="header__logo-image" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/sernero_logo.svg" alt="company logo" />
     </a>
     <nav class="header__nav nav" title="Navigation">
       <ul class="list-reset nav__list">
         <li class="nav__item">
-          <a href="/about.html" class="nav__list-link" data-link="/about.html">О нас</a>
+          <a href="/wordpress/about" class="nav__list-link" data-link="about">О нас</a>
         </li>
         <li class="nav__item">
-          <a href="/services.html" class="nav__list-link" data-link="/services.html">Услуги</a>
+          <a href="/wordpress/services" class="nav__list-link" data-link="services">Услуги</a>
         </li>
         <li class="nav__item">
-          <a href="/portfolio.html" class="nav__list-link" data-link="/portfolio.html">Портфолио</a>
+          <a href="/wordpress/portfolio" class="nav__list-link" data-link="portfolio">Портфолио</a>
         </li>
         <li class="nav__item">
-          <a href="/blog.html" class="nav__list-link" data-link="/blog.html">Блог</a>
+          <a href="/blog.html" class="nav__list-link" data-link="blog">Блог</a>
         </li>
         <li class="nav__item">
-          <a href="/contacts.html" class="nav__list-link contacts-link" data-link="/contacts.html">Контакты</a>
+          <a href="/contacts.html" class="nav__list-link contacts-link" data-link="contacts">Контакты</a>
         </li>
       </ul>
     </nav>
