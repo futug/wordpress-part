@@ -29,27 +29,55 @@
     <div class="site-container">
       <header class="header">
   <div class="header__inner container">
-    <a class="header__logo" href="index.html">
+    <a class="header__logo" href="<?php echo home_url() . '/index'; ?>">
       <img class="header__logo-image" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/sernero_logo.svg" alt="company logo" />
     </a>
     <nav class="header__nav nav" title="Navigation">
-      <ul class="list-reset nav__list">
-        <li class="nav__item">
-          <a href="/wordpress/about" class="nav__list-link" data-link="about">О нас</a>
-        </li>
-        <li class="nav__item">
-          <a href="/wordpress/services" class="nav__list-link" data-link="services">Услуги</a>
-        </li>
-        <li class="nav__item">
-          <a href="/wordpress/portfolio" class="nav__list-link" data-link="portfolio">Портфолио</a>
-        </li>
-        <li class="nav__item">
-          <a href="/blog.html" class="nav__list-link" data-link="blog">Блог</a>
-        </li>
-        <li class="nav__item">
-          <a href="/contacts.html" class="nav__list-link contacts-link" data-link="contacts">Контакты</a>
-        </li>
-      </ul>
+    <ul class="list-reset nav__list">
+                <li class="nav__item">
+                  <a
+                    href="<?php echo home_url() . '/o-nas'; ?>"
+                    class="nav__list-link"
+                    data-link="about"
+                    >О нас</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a
+                    href="<?php echo home_url() . '/uslugi-marketingovogo-agenstva'; ?>"
+                    class="nav__list-link"
+                    data-link="uslugi-marketingovogo-agenstva"
+                    >Услуги</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a
+                    href="<?php echo home_url() . '/portfolio'; ?>"
+                    class="nav__list-link"
+                    data-link="portfolio"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a
+                    href="<?php echo home_url() . '/blog'; ?>"
+                    class="nav__list-link"
+                    data-link="blog"
+                    >Блог</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a
+                    href="<?php echo home_url() . '/contacts'; ?>"
+                    class="nav__list-link"
+                    data-link="contacts"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
     </nav>
+    <div class="header__burger">
+      <span></span>
+    </div>
   </div>
 </header>

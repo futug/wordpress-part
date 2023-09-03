@@ -1,7 +1,7 @@
 <footer class="footer footer_dark">
   <div class="footer__container container">
     <div class="footer__contacts-bar">
-      <a href="#" class="footer__contacts-bar-item">
+      <a href="tel:+3726188161" class="footer__contacts-bar-item">
         <svg class="footer__contacts-bar-ico">
           <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#phone"></use>
         </svg>
@@ -10,7 +10,7 @@
           <p class="footer__contacts-bar-bot">+372 618 81 61</p>
         </div>
       </a>
-      <a href="#" class="footer__contacts-bar-item">
+      <a href="mailto:info@sernero.com" class="footer__contacts-bar-item">
         <svg class="footer__contacts-bar-ico">
           <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#mail"></use>
         </svg>
@@ -44,25 +44,25 @@
       <p class="footer__subtitle">наши услуги</p>
       <ul class="footer__service-list">
         <li class="footer__service-item">
-          <a href="/google-ads.html">Реклама в поиске</a>
+          <a href="<?php echo home_url() . '/nastroika-poiskovoi-reklami-google-ads'; ?>">Реклама в поиске</a>
         </li>
         <li class="footer__service-item">
-          <a href="/google-search-ads.html">Медийная реклама</a>
+          <a href="<?php echo home_url() . '/nastroika-reklami-bannerov-v-google'; ?>">Медийная реклама</a>
         </li>
         <li class="footer__service-item">
-          <a href="/video-marketing.html">Видеореклама</a>
+          <a href="<?php echo home_url() . '/nastroika-youtube-reklami'; ?>">Видеореклама</a>
         </li>
         <li class="footer__service-item">
-          <a href="/google-analytics.html">Веб-аналитика</a>
+          <a href="<?php echo home_url() . '/nastroika-google-analytics'; ?>">Веб-аналитика</a>
         </li>
         <li class="footer__service-item">
-          <a href="/audit.html">Аудит</a>
+          <a href="<?php echo home_url() . '/audit-reklamnih-kampanij'; ?>">Аудит</a>
         </li>
         <li class="footer__service-item">
-          <a href="/landing-page.html">Создание лендингов</a>
+          <a href="<?php echo home_url() . '/sozdanie-landing-stranic'; ?>">Создание лендингов</a>
         </li>
         <li class="footer__service-item">
-          <a href="/seo.html">SEO</a>
+          <a href="<?php echo home_url() . '/seo-prodvizhenie'; ?>">SEO</a>
         </li>
       </ul>
     </div>
@@ -89,7 +89,7 @@
         </div>
       </div>
     </div>
-    <a href="/privat-policy.html" class="footer__privacy">
+    <a href="<?php echo home_url() . '/privacy-policy'; ?>" class="footer__privacy">
       Политика конфиденциальности и условия использования
     </a>
     <div class="footer__socials-bar socials-bar">

@@ -1,7 +1,7 @@
 <?php get_header( 'light' ); ?>
 
 <?php 
-/*Template Name: about */
+/*Template Name: o-nas */
 ?>
         <main class="main">
           <section class="about-hero hero-section">
@@ -11,13 +11,13 @@
                  <?php the_field('Descr'); ?>
                 </p>
                 <div class="about-hero__content-cta">
-                  <a href="/portfolio.html" class="btn btn-secondary btn--brown"
+                  <a href="<?php echo home_url() . '/portfolio'; ?>" class="btn btn-secondary btn--brown"
                     >Наши кейсы</a
                   >
-                  <a href="/services.html" class="btn btn-primary btn--brown"
+                  <a href="<?php echo home_url() . '/uslugi-marketingovogo-agenstva'; ?>" class="btn btn-primary btn--brown"
                     >Наши услуги</a
                   >
-                  <a href="/contacts.html" class="btn btn-secondary btn--brown"
+                  <a href="<?php echo home_url() . '/contacts'; ?>" class="btn btn-secondary btn--brown"
                     ><svg class="btn-msg-ico">
                       <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#prime_message"></use>
                     </svg>
@@ -31,8 +31,7 @@
               <p class="about-hero__content-text">
               <?php the_field('descr_third'); ?>
               </p>
-              <form
-                action="#"
+              <div
                 class="about-hero__form main-form-horizont horiz-brown-version"
                 id="about-hero__form"
               >
@@ -43,9 +42,8 @@
                   Наши менеджеры свяжутся с вами в ближайшее время!
                 </p>
                 <div class="main-form-horizont__form-body">
-                  <div class="main-form-horizont__inputs">
-                    <div class="main-form-horizont__inputs-top">
-                      <label class="main-form-horizont__label"
+                <?php echo do_shortcode('[contact-form-7 id="ca0a540" title="main-form-horizont--brown"]'); ?>
+                      <!-- <label class="main-form-horizont__label"
                         ><input
                           type="text"
                           name="Имя"
@@ -73,20 +71,20 @@
                           class="input-reset url__input main-form-horizont__input"
                           placeholder="Ваш сайт"
                       /></label>
-                    </div>
-                  </div>
+
                   <button class="btn-reset main-form-horizont__button">
                     Отправить
-                  </button>
+                  </button> -->
                 </div>
                 <p class="main-form-horizont__privacy-warn">
                   Нажимая кнопку, вы соглашаетесь с
-                  <a href="privat-policy.html">политикой конфиденциальности</a>
+                  <a href="<?php echo home_url() . '/privacy-policy'; ?>">политикой конфиденциальности</a>
                   сайта.
                 </p>
-              </form>
+              </div>
             </div>
           </section>
+          
           <section class="team section-offset">
             <div class="team__content container">
               <h2 class="team__content-title section-title"><?php the_field('second_title'); ?></h2>

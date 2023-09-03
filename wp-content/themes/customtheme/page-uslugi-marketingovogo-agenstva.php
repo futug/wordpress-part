@@ -46,7 +46,7 @@
                         <p class="item__title"><?php echo $services_item_1['services_item-title']; ?></p>
                         <p class="item__desc"><?php echo $services_item_1['services_item-descr']; ?></p>
                         <a
-                        href="google-search-ads.html"
+                        href="<?php echo home_url() . '/nastroika-poiskovoi-reklami-google-ads'; ?>"
                         class="btn-reset services-button item__button"
                         >
                         Подробнее
@@ -68,7 +68,7 @@
                         <p class="item__title"><?php echo $services_item_2['services_item-title']; ?></p>
                         <p class="item__desc"><?php echo $services_item_2['services_item-descr']; ?></p>
                         <a
-                        href="google-search-ads.html"
+                        href="<?php echo home_url() . '/nastroika-reklami-bannerov-v-google'; ?>"
                         class="btn-reset services-button item__button"
                         >
                         Подробнее
@@ -90,7 +90,7 @@
                         <p class="item__title"><?php echo $services_item_3['services_item-title']; ?></p>
                         <p class="item__desc"><?php echo $services_item_3['services_item-descr']; ?></p>
                         <a
-                        href="google-search-ads.html"
+                        href="<?php echo home_url() . '/nastroika-youtube-reklami'; ?>"
                         class="btn-reset services-button item__button"
                         >
                         Подробнее
@@ -112,7 +112,7 @@
                         <p class="item__title"><?php echo $services_item_4['services_item-title']; ?></p>
                         <p class="item__desc"><?php echo $services_item_4['services_item-descr']; ?></p>
                         <a
-                        href="google-search-ads.html"
+                        href="<?php echo home_url() . '/nastroika-google-analytics'; ?>"
                         class="btn-reset services-button item__button"
                         >
                         Подробнее
@@ -134,7 +134,7 @@
                         <p class="item__title"><?php echo $services_item_5['services_item-title']; ?></p>
                         <p class="item__desc"><?php echo $services_item_5['services_item-descr']; ?></p>
                         <a
-                        href="google-search-ads.html"
+                        href="<?php echo home_url() . '/audit-reklamnih-kampanij'; ?>"
                         class="btn-reset services-button item__button"
                         >
                         Подробнее
@@ -156,7 +156,7 @@
                         <p class="item__title"><?php echo $services_item_6['services_item-title']; ?></p>
                         <p class="item__desc"><?php echo $services_item_6['services_item-descr']; ?></p>
                         <a
-                        href="google-search-ads.html"
+                        href="<?php echo home_url() . '/sozdanie-landing-stranic'; ?>"
                         class="btn-reset services-button item__button"
                         >
                         Подробнее
@@ -178,7 +178,7 @@
                         <p class="item__title"><?php echo $services_item_7['services_item-title']; ?></p>
                         <p class="item__desc"><?php echo $services_item_7['services_item-descr']; ?></p>
                         <a
-                        href="google-search-ads.html"
+                        href="<?php echo home_url() . '/seo-prodvizhenie'; ?>"
                         class="btn-reset services-button item__button"
                         >
                         Подробнее
@@ -198,75 +198,23 @@
       <?php the_field('services_cta-subtitle'); ?>
       </p>
     </div>
-    <form
-      action="#"
-      class="google-content__content-form main-form-horizont horiz-white-version"
-      id="services-cta-form"
-    >
-      <h2 class="main-form-horizont__title">
+    <div action="#"
+      class="google-content__content-form services-form main-form-horizont main-form-horizon--select horiz-white-version"
+      id="services-cta-form">
+      <p class="main-form-horizont__title">
         Заполните форму и узнайте стоимость продвижения
-      </h2>
+      </p>
       <p class="main-form-horizont__subtitle">
         Наши менеджеры свяжутся с вами в ближайшее время!
       </p>
-      <div class="main-form-horizont__form-body">
-        <div class="main-form-horizont__inputs">
-          <div class="main-form-horizont__inputs-top">
-            <label class="main-form-horizont__label">
-              <input
-                type="text"
-                name="Имя"
-                class="input-reset name__input main-form-horizont__input"
-                placeholder="Ваше имя"
-              />
-            </label>
-            <label class="main-form-horizont__label">
-              <input
-                type="tel"
-                name="Телефон"
-                class="input-reset tel__input main-form-horizont__input"
-                placeholder="Ваш телефон"
-              />
-            </label>
-            <label class="main-form-horizont__label">
-              <input
-                type="email"
-                name="Почта"
-                class="input-reset email__input main-form-horizont__input"
-                placeholder="Ваш e-mail"
-              />
-            </label>
-            <div class="main-form-horizont__select">
-              <select class="input-reset main-form-horizont__input">
-                <option value="search-advertisement">Реклама в поиске</option>
-                <option value="media-advertisement">Медийная реклама</option>
-                <option value="video-advertisement">Видеореклама</option>
-                <option value="web-analytics">Веб-аналитика</option>
-                <option value="audit">Аудит</option>
-                <option value="landings-creation">Создание лендингов</option>
-                <option value="seo">SEO</option>
-              </select>
-              <svg class="downarrow">
-                <use xlink:href="<?php bloginfo('template_url'); ?>/assets/img/sprite.svg#coolicon"></use>
-              </svg>
-            </div>
-          </div>
-          <label class="main-form-horizont__label">
-            <input
-              type="text"
-              name="Сайт"
-              class="input-reset url__input main-form-horizont__input"
-              placeholder="Ваш сайт"
-            />
-          </label>
-        </div>
-        <button class="btn-reset main-form-horizont__button">Отправить</button>
-      </div>
+      <?php echo do_shortcode('[contact-form-7 id="96f9e77" title="form-with-select"]'); ?>
+      <!-- <div class="main-form-horizont__form-body">
+      <?php echo do_shortcode('[contact-form-7 id="949e3d2" title="main-form-horizont"]'); ?>
+      </div> -->
       <p class="main-form-horizont__privacy-warn">
-        Нажимая кнопку, вы соглашаетесь с
-        <a href="privat-policy.html">политикой конфиденциальности</a> сайта.
+        Нажимая кнопку, вы соглашаетесь с <a href="privat-policy.html">политикой конфиденциальности</a> сайта.
       </p>
-    </form>
+         </div>
   </div>
 </section>
 

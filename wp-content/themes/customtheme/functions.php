@@ -17,3 +17,22 @@ function custom_assets() {
 }
 
 add_action( 'wp_enqueue_scripts' ,'custom_assets' );
+
+// function custom_cf7_form_shortcode($atts) {
+//     $atts = shortcode_atts(array(
+//         'id' => '',         // ID формы Contact Form 7
+//         'class' => '',      // класс(ы) элемента
+//     ), $atts);
+
+//     // Генерируем HTML для вывода формы
+//     $output = do_shortcode('[contact-form-7 id="' . esc_attr($atts['id']) . '"]');
+
+//     // Добавляем класс(ы), если указаны
+//     if (!empty($atts['class'])) {
+//         $output = str_replace('<form', '<form class="' . esc_attr($atts['class']) . '"', $output);
+//     }
+
+//     return $output;
+// }
+// add_shortcode('cf7_form', 'custom_cf7_form_shortcode');
+

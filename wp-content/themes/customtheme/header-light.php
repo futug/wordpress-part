@@ -27,7 +27,7 @@
       <div class="site-container">
         <header class="header header--light">
           <div class="header__inner container">
-            <a class="header__logo" href="index.php"
+            <a class="header__logo" href="<?php echo home_url() . '/index'; ?>"
               ><img
                 class="header__logo-image"
                 loading="lazy"
@@ -38,45 +38,48 @@
               <ul class="list-reset nav__list">
                 <li class="nav__item">
                   <a
-                    href="about.html"
+                    href="<?php echo home_url() . '/o-nas'; ?>"
                     class="nav__list-link"
-                    data-link="about"
+                    data-link="o-nas"
                     >О нас</a
                   >
                 </li>
                 <li class="nav__item">
                   <a
-                    href="services.html"
+                    href="<?php echo home_url() . '/uslugi-marketingovogo-agenstva'; ?>"
                     class="nav__list-link"
-                    data-link="/services.html"
+                    data-link="uslugi-marketingovogo-agenstva"
                     >Услуги</a
                   >
                 </li>
                 <li class="nav__item">
                   <a
-                    href="portfolio.html"
+                    href="<?php echo home_url() . '/portfolio'; ?>"
                     class="nav__list-link"
-                    data-link="/porfolio.html"
+                    data-link="porfolio"
                     >Портфолио</a
                   >
                 </li>
                 <li class="nav__item">
                   <a
-                    href="blog.html"
+                    href="<?php echo home_url() . '/blog'; ?>"
                     class="nav__list-link"
-                    data-link="/blog.html"
+                    data-link="blog"
                     >Блог</a
                   >
                 </li>
                 <li class="nav__item">
                   <a
-                    href="contacts.html"
+                    href="<?php echo home_url() . '/contacts'; ?>"
                     class="nav__list-link"
-                    data-link="/contacts.html"
+                    data-link="contacts"
                     >Контакты</a
                   >
                 </li>
               </ul>
             </nav>
+            <div class="header__burger">
+      <span></span>
+    </div>
           </div>
         </header>
